@@ -2,50 +2,38 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="robots" content="index, follow">
     <meta name="description" content="Entreprise de webdesign située à Lyon, la Chouette Agence
 	vous apporte son expertise pour vous aider à la création ou la refonte de votre site web">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<!-- Open Graph meta pour Facebook et LinkedIn -->
+	<meta property="og:title" content="Formulaire de contact - La Chouette Agence" />
+	<meta property="og:url" content="https://fariben06.github.io/La-chouette-agence_P4/" />
+	<meta property="og:image" content="img_opengraph/opengraph2.png" />
+	<meta property="og:description" content="Pour contacter notre équipe de web designers basés à Lyon et vous aider à créer ou optimiser le site web de votre entreprise, remplissez ce formulaire !" />
+	<meta property="og:site_name" content="La chouette agence" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image:alt" content="Travail d'un designer">
+	<!-- Card meta pour Twitter -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@lachouetteagence">
+	<meta name="twitter:title" content="Formulaire de contact - La Chouette Agence" />
+	<meta name="twitter:description" content="Pour contacter notre équipe de web designers basés à Lyon et vous aider à créer ou optimiser le site web de votre entreprise, remplissez ce formulaire !" />
 	<link rel="canonical" href="https://fariben06.github.io/La-chouette-agence_P4/">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-
-    
+	<!--- CSS --->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	
-    
+	<!--- JS --->
 	<script src="./js/jquery-2.1.0.js" defer></script>
 	<script src="./js/bootstrap.js" defer></script>
 	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
 	<script src="./js/gmaps.js" defer></script>
-
-	<!-- Open Graph meta for Facebook and LinkedIn -->
-	<meta property="og:title" content="La Chouette Agence - Entreprise de webdesign à Lyon" />
-	<meta property="og:url" content="https://fariben06.github.io/La-chouette-agence_P4/" />
-	<meta property="og:image" content="img_opengraph/opengraph1.png" />
-	<meta property="og:description" content="Entreprise de webdesign située à Lyon, la Chouette Agence vous apporte son expertise pour vous aider à la création ou la refonte de votre site web." />
-	<meta property="og:site_name" content="La chouette agence" />
-	<meta property="og:type" content="website" />
-	<meta property="og:image:alt" content="Création d'un site web">
-
-	<!-- Card meta for Twitter -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:site" content="@lachouetteagence">
-	<meta name="twitter:title" content="La Chouette Agence - Entreprise de webdesign à Lyon" />
-	<meta name="twitter:description" content="Entreprise de webdesign située à Lyon, la Chouette Agence vous apporte son expertise pour vous aider à la création ou la refonte de votre site web." />
-
-	<!-- Epingle Pinterest -->
-	<meta property="og:type" content="website" />
-	<meta property="og:title" content="La Chouette Agence - Entreprise de webdesign à Lyon" />
-	<meta property="og:description" content="Entreprise de webdesign située à Lyon, la Chouette Agence vous apporte son expertise pour vous aider à la création ou la refonte de votre site web." />
-	<meta property="og:url" content="https://fariben06.github.io/La-chouette-agence_P4/" />
-	<meta property="og:site_name" content="La chouette agence" />
+	<!--- Title description --->
     <title>La Chouette Agence - Entreprise de webdesign à Lyon</title>
-
-    
 <!-- Analytics -->
  
 <!-- Analytics END -->
@@ -61,8 +49,8 @@
 
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="logo la chouette agence" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="logo de la chouette agence, votre entreprise de webdesign à lyon" height="40" /></a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" aria-label="Afficher le menu de navigation">
 					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
@@ -72,7 +60,7 @@
 						<a href="index.html" title="Accueil - La chouette agence">Accueil</a>
 					</li>
 					<li>
-						<a href="contact-webdesigner.html" title="Formulaire de contact">Contactez-nous</a>	
+						<a href="contact.html" title="Formulaire de contact">Contactez-nous</a>	
 					</li>
 				</ul>
 			</div>
@@ -91,7 +79,7 @@
 					La chouette agence.
 				</h1>
 				<div class="text-center">
-					<a href="contact-webdesigner.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" title="Formulaire de contact" id="cta-hero">Contact</a>
+					<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" title="Formulaire de contact" id="cta-hero">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -178,7 +166,7 @@
 <!-- bloc-3-what-i-do END -->
 
 <!-- bloc-4-portfolio -->
-<div class="bloc bgc-white bg-lines-h2-bg bg-repeat l-bloc" id="bloc-4-portfolio">
+<div class="bloc bgc-white bg-repeat l-bloc" id="bloc-4-portfolio">
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12 text-center">
@@ -239,7 +227,7 @@
 				Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 			</h2>
 			<div class="col-sm-12 text-center">
-				<a href="contact-webdesigner.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+				<a href="contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 			</div>
 		</div>
 	</div>
