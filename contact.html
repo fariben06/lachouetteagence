@@ -6,7 +6,10 @@
     <meta name="robots" content="index, follow">
     <meta name="description" content="Entreprise de webdesign située à Lyon, la Chouette Agence
 	vous apporte son expertise pour vous aider à la création ou la refonte de votre site web">
-	<!-- Open Graph meta pour Facebook et LinkedIn -->
+	<link rel="canonical" href="https://fariben06.github.io/La-chouette-agence_P4/">
+    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
+
+	<!-- Open Graph meta for Facebook and LinkedIn -->
 	<meta property="og:title" content="Formulaire de contact - La Chouette Agence" />
 	<meta property="og:url" content="https://fariben06.github.io/La-chouette-agence_P4/" />
 	<meta property="og:image" content="img_opengraph/opengraph2.png" />
@@ -14,26 +17,29 @@
 	<meta property="og:site_name" content="La chouette agence" />
 	<meta property="og:type" content="website" />
 	<meta property="og:image:alt" content="Travail d'un designer">
-	<!-- Card meta pour Twitter -->
+
+	<!-- Card meta for Twitter -->
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:site" content="@lachouetteagence">
 	<meta name="twitter:title" content="Formulaire de contact - La Chouette Agence" />
 	<meta name="twitter:description" content="Pour contacter notre équipe de web designers basés à Lyon et vous aider à créer ou optimiser le site web de votre entreprise, remplissez ce formulaire !" />
-	<link rel="canonical" href="https://fariben06.github.io/La-chouette-agence_P4/">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-	<!--- CSS --->
+	
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
-	<!--- JS --->
+
+	<!-- JS -->
 	<script src="./js/jquery-2.1.0.js" defer></script>
 	<script src="./js/bootstrap.js" defer></script>
 	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
 	<script src="./js/gmaps.js" defer></script>
-	<!--- Title description --->
+
+	<!-- Title description -->
     <title>La Chouette Agence - Entreprise de webdesign à Lyon</title>
+
 <!-- Analytics -->
  
 <!-- Analytics END -->
@@ -59,7 +65,7 @@
 						<a href="index.html" title="Accueil - La chouette agence">Accueil</a>
 					</li>
 					<li>
-						<a href="contact.html" alt="Formulaire de contact">Contactez-nous</a>
+						<a href="contact.html" title="Formulaire de contact">Contactez-nous</a>
 					</li>
 				</ul>
 			</div>
@@ -91,32 +97,32 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" novalidate data-success-msg="Your message has been sent." data-fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
-						    <input id="name" class="form-control" type="email" alt="Entrez votre email" required />
-						</label>
+						</label>	
+						    <input id="name" class="form-control" type="email" title="Entrez votre nom" required />						
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" alt="Entrez votre email" required />
+						<input id="email" class="form-control" type="email" title="Entrez votre email" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" alt="Comment nous avez-vous connu" required id="input_504" />
+						<input class="form-control" type="email" title="Comment nous avez-vous connu ?" required id="input_504" />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 						    <textarea id="message" class="form-control" rows="4" cols="50" title="Détaillez-nous votre projet" required></textarea>
 					    </label>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" alt="Envoi du formulaire" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" title="Envoi du formulaire" type="submit">
 						Envoyer
 					</button>
 				</form>
@@ -132,49 +138,47 @@
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<a class="bloc-button btn btn-d scrollToTop" aria-label="Go to the top of the page" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 <!-- ScrollToTop Button END-->
 
 
 <!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white p-style">
+				<p class="text-center white">
 					La chouette agence - Agence web basée à Lyon.
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://twitter.com/home" title="Twitter"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" aria-label="Twitter" href="https://twitter.com/home"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.facebook.com" title="Facebook"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" aria-label="Facebook" href="https://www.facebook.com"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://Dribbble.com" title="Dribble"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" aria-label="Dribbble" href="https://Dribbble.com"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="https://www.instagram.com/?hl=fr" title="Istagram"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" aria-label="Istagram" href="https://www.instagram.com/"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
 
 </div>
 <!-- Principal conteneur END -->
-    
-
 </body>
 </html>
