@@ -40,18 +40,15 @@
 			<header class="bloc bgc-white l-bloc " id="bloc-0">
 				<div class="container bloc-sm">
 
-					<nav class="navbar row">
+					<nav aria-label="menu" class="navbar row">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="logo de la chouette agence, votre entreprise de webdesign à lyon" height="40" /></a>
-							<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" aria-label="Afficher le menu de navigation">
+							<a ari-label="accueil" class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Bouton d'accueil la choette agence, votre entreprise de webdesign à lyon" height="40" /></a>
+							<button aria-label="Afficher le menu de navigation" id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 								<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 							</button>
 						</div>
 						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 							<ul class="site-navigation nav navbar-nav">
-								<li>
-									<a href="./contact.html" title="Formulaire de contact">Contactez-nous</a>	
-								</li>
 								<li>
 									<a href="#bloc-2-services">Compétences</a>
 								</li>
@@ -60,6 +57,9 @@
 								</li>
 								<li>
 									<a href="#bloc-4-portfolio">Portfolio</a>
+								</li>
+								<li>
+									<a aria-label="Contactez-nous" href="./contact.html" title="Formulaire de contact">Contactez-nous</a>	
 								</li>
 							</ul>
 						</div>
@@ -78,7 +78,7 @@
 								La chouette agence.
 							</h1>
 							<div class="text-center">
-								<a href="./index.html" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine" title="Formulaire de contact" id="cta-hero">Contact</a>
+								<a aria-label="Contactez-nous" href="#bloc-5-cta" class="btn btn-lg btn-clean btn-rd cta-hero btn-atomic-tangerine">Contact</a>
 							</div>
 						</div>
 					</div>
@@ -87,7 +87,7 @@
 			<!-- bloc-1-presentation END -->
 
 			<!-- bloc-2-services -->
-			<div class="bloc bgc-white l-bloc" id="bloc-2-services">
+			<div aria-label="Compétences" class="bloc bgc-white l-bloc" id="bloc-2-services">
 				<div class="container bloc-md">
 					<div class="row">
 						<div class="col-sm-12 text-center">
@@ -146,7 +146,7 @@
 				<!-- bloc-2-services END -->
 
 				<!-- bloc-3-what-i-do -->
-				<div class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc b-parallax" id="bloc-3-what-i-do">
+				<div aria-label="Objectifs" class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc b-parallax" id="bloc-3-what-i-do">
 					<div class="container bloc-lg">
 						<div class="row tight-width-whitespace black-background">
 							<div class="col-sm-12">
@@ -154,7 +154,7 @@
 									Nous souhaitons aider les entreprises de la région Lyonnaise à se développer et à connaître le succès. Nous travaillons pour aider les entreprises locales à attirer de nouveaux clients .<br>
 								</h2>
 								<p class="text-center ltc-white">
-									Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br><a class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a><br>
+									Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locale, qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, n’hésitez pas à nous contacter. Nous travaillerons ensemble pour créer des sites beau et bien structurés, qui seront facilement trouvable sur les moteurs de recherche. <br><br><a aria-label="Contactez-nous" class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a><br>
 								</p>
 							</div>
 						</div>
@@ -163,7 +163,7 @@
 				<!-- bloc-3-what-i-do END -->
 
 				<!-- bloc-4-portfolio -->
-				<div class="bloc bgc-white bg-lines-h2bg bg-repeat l-bloc" id="bloc-4-portfolio">
+				<div aria-label="Portfolio" class="bloc bgc-white bg-lines-h2bg bg-repeat l-bloc" id="bloc-4-portfolio">
 					<div class="container bloc-lg">
 						<div class="row">
 							<div class="col-sm-12 text-center">
@@ -217,14 +217,14 @@
 				<!-- bloc-4-portfolio END -->
 
 				<!-- bloc-5-cta -->
-				<div class="bloc bgc-dark-slate-blue bg-banniere d-bloc" id="bloc-5-cta">
+				<div aria-label="contactez-nous" class="bloc bgc-dark-slate-blue bg-banniere d-bloc" id="bloc-5-cta">
 					<div class="container bloc-lg">
 						<div class="row">
 							<h2 class="mg-md text-center ltc-white">
 								Prêt pour redonner vie à votre projet ?<br>Contactez notre équipe !
 							</h2>
 							<div class="col-sm-12 text-center">
-								<a href="./index.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
+								<a aria-label="Lien Formulaire de contact" href="./contact.html" class="btn btn-atomic-tangerine btn-clean btn-rd btn-lg cta-hero">Contact</a>
 							</div>
 						</div>
 					</div>
@@ -236,7 +236,7 @@
 				<!-- ScrollToTop Button END-->
 
 				<!-- Footer - bloc-8 -->
-			<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<footer aria-label="Réseaux Sociaux" class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
 				<div class="container bloc-sm footer">
 					<div class="row">
 						<div class="col-sm-12">
@@ -246,22 +246,22 @@
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="https://twitter.com/home" title="Twitter"><span class="fa fa-twitter icon-md"></span></a>
+										<a class="social" aria-label="Twitter" href="https://twitter.com/home" title="Twitter"><span class="fa fa-twitter icon-md"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="https://www.facebook.com" title="Facebook"><span class="fa fa-facebook icon-md"></span></a>
+										<a class="social" aria-label="Facebook" href="https://www.facebook.com" title="Facebook"><span class="fa fa-facebook icon-md"></span></a>
 									</div>
 								</div>
 									<div class="col-sm-3">
 										<div class="text-center">
-											<a class="social" href="https://Dribbble.com" title="Dribble"><span class="fa fa-dribbble icon-md"></span></a>
+											<a class="social" aria-label="Dribbble" href="https://Dribbble.com" title="Dribble"><span class="fa fa-dribbble icon-md"></span></a>
 										</div>
 									</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="https://www.instagram.com/?hl=fr" title="Istagram"><span class="fa fa-instagram icon-md"></span></a>
+										<a class="social" aria-label="Istagram" href="https://www.instagram.com/?hl=fr" title="Istagram"><span class="fa fa-instagram icon-md"></span></a>
 									</div>
 								</div>					
 							</div>
